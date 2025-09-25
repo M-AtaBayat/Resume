@@ -32,20 +32,20 @@
 
 <body class="index-page">
 
-  <header id="header" class="header low-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header id="header" class="header low-background d-flex flex-column overflow-hidden">
+    <i class="header-toggle d-xl-none bi bi-list" id="navToggle"></i>
 
     <div class="profile-img">
       <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">محمد عطا بیات</h1>
+      <h4 class="sitename">محمد عطا بیات</h4>
     </a>
 
     <div class="social-links text-center">       
         <a href="https://t.me/Kalsrexor"><i class="bi bi-telegram flex-shrink-0 icon"></i></a>
-        <a href="https://www.instagram.com/kalsrexor?igsh=MTMyaHJjejNml3"><i class="bi bi-instagram flex-shrink-0 icon"></i></a>
+        <a href="https://www.instagram.com/kalsrexor_music?igsh=MTMyaHJjejNml3"><i class="bi bi-instagram flex-shrink-0 icon"></i></a>
         <a href="https://github.com/M-AtaBayat"><i class="bi bi-github flex-shrink-0 icon"></i></a>
     </div>
 
@@ -53,8 +53,8 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>صفحه اصلی</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> درباره</a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i> مهارت ها</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> رزومه</a></li>
-        <!-- <li><a href="#portfolio"><i class="bi bi-images navicon"></i> نمونه کار</a></li> -->
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> ارتباط با من</a></li>
       </ul>
     </nav>
@@ -68,7 +68,7 @@
       <img src="assets/img/Hero_Picture2.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>محمد عطا بیات</h2>
+        <h1>محمد عطا بیات</h1>
         <p><span class="typed" data-typed-items="طراح سایت , توسعه دهنده وب, فریلنسر "></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
@@ -81,23 +81,21 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>درباره</h2>
-        <p>
+        <p class="lead">
           
-          برنامه نویس و طراح وب از سال ۱۳۹۹ تا اکنون سابقه کار تخصصی برنامه نویسی وب، توسعه دهنده وب با تجربه و مهارت در تمام مراحل توسعه پیشرفته وب .
-        </p>
+برنامه نویس و طراح وب از سال ۱۳۹۹ تا اکنون با سابقه کار تخصصی در برنامه نویسی وب، توسعه دهنده وب با تجربه و مهارت در تمام مراحل توسعه پیشرفته وب از جمله فرانت انذ و بک اند.         </p>
       </div><!-- End Section Title -->
       
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-left">
 
         <div class="row align-items-center">
           
 
-          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
+          <div class="col-lg-6  ">
             <div class="about-content">
-              <span class="subtitle">درباره من</span>
 
-              <h2>طراح UI/UX و توسعه دهنده وب</h2>
+              <h3>طراح UI/UX و توسعه دهنده وب</h3>
 
               <p class="lead mb-4">
                 دارای مجموعه‌ای متنوع از مهارت‌های برنامه نویسی در زمینه‌های طراحی فرانت و بک اند. با توانایی انجام پروژه به صورت تکی و همکاری گروهی.
@@ -152,9 +150,9 @@
 
             </div>
           </div>
-          <div class="col-lg-6 position-relative aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-image">
-              <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid rounded-4">
+          <div class="col-lg-6 position-relative  " data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image pt-4 pb-3">
+              <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid  rounded-4">
             </div>
           </div>
         </div>
@@ -166,13 +164,13 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
 
         <div class="row g-4 skills-animation align-items-center">
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box">
-              <h3 class="text-center">HTML & CSS</h3>
+              <h5 class="text-center">HTML & CSS</h5>
               <span class="text-end d-block">90%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
@@ -180,9 +178,9 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3 class="text-center">Bootstrap</h3>
+              <h5 class="text-center">Bootstrap</h5>
               <span class="text-end d-block">95%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
@@ -190,9 +188,9 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box">
-              <h3 class="text-center">JavaScript</h3>
+              <h5 class="text-center">JavaScript</h5>
               <span class="text-end d-block">90%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
@@ -200,9 +198,9 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="400">
             <div class="skill-box">
-              <h3 class="text-center">React</h3>
+              <h5 class="text-center">React</h5>
               <span class="text-end d-block">65%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
@@ -211,9 +209,9 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box">
-              <h3 class="text-center">Node.js</h3>
+              <h5 class="text-center">Node.js</h5>
               <span class="text-end d-block">60%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
@@ -221,9 +219,9 @@
             </div>
           </div>
   
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3 class="text-center">Responsive & dynamic web deign</h3>
+              <h5 class="text-center">Responsive & dynamic web deign</h5>
               <span class="text-end d-block">100%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
@@ -231,9 +229,9 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3 class="text-center">ASP.Net Core</h3>
+              <h5 class="text-center">ASP.Net Core</h5>
               <span class="text-end d-block">80%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
@@ -241,9 +239,9 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3 class="text-center">SQL (Database Management)</h3>
+              <h5 class="text-center">SQL (Database Management)</h5>
               <span class="text-end d-block">80%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
@@ -251,9 +249,19 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-12 col col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3 class="text-center">Onionn Architecture</h3>
+              <h5 class="text-center">Onionn Architecture</h5>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-12 col col-lg-3  " data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h5 class="text-center">Github</h5>
               <span class="text-end d-block">90%</span>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
@@ -272,8 +280,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>رزومه</h2>
-        <p>
-          پس از سال ها آموزش حرفه ای شروع به گرفتن و انجام پروژه کردم، پس طبیعی است رزومه پرقدرتی نداشته باشم، شما می توانید پروژه هایی که برای تمرین خودم طراحی کردم رو قضاوت کنید.
+        <p class="lead">
+          برنامه نویس واقعی همواره پی ارتقا دادن مهارت ها و آشنا شدن با سبک و تکنولوژی مدرن است، در انتخاب برنامه نویس خود دقت کنید.
+بنده همواره و ۲۴ ساعته دانش خود را ارتقا میدهم و سلیقه عموم مردم را تحلیل میکنم تا سایتی که طراحی میکنم مورد پسند عموم باشد.
         </p>
       </div><!-- End Section Title -->
 
@@ -283,22 +292,22 @@
           <div class="col-12">
             <div class="resume-wrapper">
               <div class="resume-block" data-aos="fade-up">
-                <h2>تجربه کاری</h2>
+                <h3>تجربه کاری</h3>
                 <p class="lead">
-                  نداشتن تجربه کاری به معنای برنیامدن از عهده پرژه ها نیست.
+                  نداشتن تجربه کاری به معنای برنیامدن از عهده پرژه ها نیست. مهم مهارت های به روز است.
                 </p>
 
                 <div class="timeline">
                   <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-left">
-                      <h4 class="company">کسب مقام اول کشور</h4>
+                      <h6 class="company"> مقام اول کشور در طراحی وب</h6>
                       <span class="period">۱۴۰۲ - ۱۴۰۳</span>
                     </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
-                      <h3 class="position">سایت مجموعه ها</h3>
+                      <h6 class="position">سایت مجموعه ها</h5>
                       <p class="description">
-                        کسب مقام اول کشور در دهمین جشنواره نوجوان خوارزمی محور ریاضی و زیر محور فناوری اطلاعات و برنامه نویسی سایت با پروژه ای به نام سایت مجموعه ها. این سایت توسعه داده نشده و شخصی است.
+                        کسب مقام اول کشور در دهمین جشنواره نوجوان خوارزمی محور ریاضی و زیر محور برنامه نویسی و طراحی وب با پروژه ای به نام سایت مجموعه ها. این سایت برای محافظت از ایده توسعه داده نشده و شخصی است. 
                       </p>
                     </div>
                   </div>
@@ -306,24 +315,6 @@
                 </div>
               </div>
 
-              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
-                <h2>تحصیلات من</h2>
-                <p class="lead"> پایین بودن سن و تحصیلات به معنای برنیامدن از عهده پرژه ها نیست.</p>
-
-                <div class="timeline">
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-left">
-                      <h4 class="company">درحال تحصیل</h4>
-                      <span class="period">۱۳۹۴ - ...</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">دانش آموز رشته ریاضی دبیرستان</h3>
-                      <p class="description">دانش آموز دوره دوم متوسطه دبیرستان علامه حلی رشته ریاضی.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -331,153 +322,6 @@
       </div>
 
     </section><!-- /Resume Section -->
-
-
-    <!-- Portfolio Section -->
-    <!-- <section id="portfolio" class="portfolio section light-background">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>نمونه کار</h2>
-        <p>میزان پیشرفته بودن نمونه کار ها و درواقع پروژه هایی که برای خودم طراحی کردم از پروژه های حقیقی قدرتمند تر و پیشرفته تر هستند. تمامی این پروژه ها همراه با بک اند هستند با پنل ادمین و کاملا داینامیک  .</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
-            <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">همه</li>
-              <li data-filter=".filter-web">لندینگ</li>
-              <li data-filter=".filter-graphics">فروشگاهی</li>
-              <li data-filter=".filter-motion">شرکتی</li>
-            </ul>
-          </div>
-
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-img.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">نمونه کار</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-img.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">نمونه کار</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-img.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">نمونه کار</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-img.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">نمونه کار</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-img.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">نمونه کار</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-img.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">نمونه کار</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section> -->
-    <!-- /Portfolio Section -->
 
 
     <!-- Contact Section -->
@@ -488,32 +332,32 @@
         <h2>ارتباط با من</h2>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4" id="containerContact">
 
 
-          <div id="php-email-form" class="col-lg-7">
-            <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div id="php-email-form" data-aos="fade-left" class="pc-0 col-lg-7">
+            <form action="" method="post" class=" php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">نام :</label>
+                  <label for="name-field" class="pb-2 lead">نام :</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
 
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">ایمیل :</label>
+                  <label for="email-field" class="pb-2 lead">ایمیل :</label>
                   <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">موضوع :</label>
+                  <label for="subject-field" class="pb-2 lead">موضوع :</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">پیام :</label>
+                  <label for="message-field" class="pb-2 lead">پیام :</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
@@ -522,36 +366,40 @@
                   <div class="error-message"></div>
                   <div class="sent-message">پیام شما ارسال شد. با تشکر!</div>
 
-                  <button type="submit">ارسال</button>
+                  <h6>
+                  <button type="submit">
+                      ارسال
+                    </button>
+                  </h6>
                 </div>
 
               </div>
             </form>
           </div><!-- End Contact Form -->
 
-          <div class="col-lg-5">
+          <div class="col-lg-5 p-0"data-aos="fade-right" >
 
-            <div id="info-wrap" class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div id="info-wrap" class="info-wrap" style="margin: 0 10px;" data-aos="fade-up" data-aos-delay="200">
+              <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>آدرس :</h3>
+                  <h6>آدرس :</h6>
                   <p>ایران، لرستان، بروجرد</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="info-item d-flex">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>شماره تلفن همراه :</h3>
+                  <h6>شماره تلفن همراه :</h6>
                   <p>۰۹۹۴۵۶۳۳۱۰۴</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>ایمیل من :</h3>
+                  <h6>ایمیل من :</h6>
                   <p>bayatata88@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -566,14 +414,13 @@
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer">
+  <footer id="footer"  class="footer">
 
     <div class="container">
       <div class="social-links d-flex justify-content-center">
-        <a href="https://t.me/Kalsrexor"><i class="bi bi-telegram flex-shrink-0 icon"></i></a>
-        <a href="https://www.instagram.com/kalsrexor?igsh=MTMyaHJjejNml3"><i class="bi bi-instagram flex-shrink-0 icon"></i></a>
-        <a href="https://github.com/M-AtaBayat"><i class="bi bi-github flex-shrink-0 icon"></i></a>
-
+        <a data-aos="fade-up" href="https://t.me/Kalsrexor"><i class="bi bi-telegram flex-shrink-0 icon"></i></a>
+        <a data-aos-delay="100" data-aos="fade-up" href="https://www.instagram.com/kalsrexor_music?igsh=MTMyaHJjejNml3"><i class="bi bi-instagram flex-shrink-0 icon"></i></a>
+        <a data-aos-delay="200" data-aos="fade-up" href="https://github.com/M-AtaBayat"><i class="bi bi-github flex-shrink-0 icon"></i></a>
       </div>
     </div>
 

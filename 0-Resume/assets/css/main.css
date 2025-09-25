@@ -1,43 +1,39 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
-:root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+@font-face {
+    font-family: 'AGhasem';
+    src: url(../font/AGhasem.ttf);
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Ziba';
+    src: url(../font/B\ Ziba_0.ttf);
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Gladiora';
+    src: url(../font/Gladiora\ Regular.otf);
+    unicode-range: U+0000-007F;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Color */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  --default-color: #272829;
+  --heading-color: #050d18;
+  --accent-color: #149ddd; 
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #a8a9b4;
+  --nav-hover-color: #ffffff;
+  --nav-mobile-background-color: #040b14;
+  --nav-dropdown-background-color: #040b14;
+  --nav-dropdown-color: #a8a9b4;
+  --nav-dropdown-hover-color: #ffffff;
 }
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f4fafd;
@@ -63,7 +59,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: 'Ziba','Gladiora';
 }
 
 a {
@@ -84,7 +80,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: 'AGhasem';
 }
 
 /* PHP Email Form Messages
@@ -96,7 +92,6 @@ h6 {
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 600;
 }
 
 .php-email-form .sent-message {
@@ -106,7 +101,9 @@ h6 {
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 600;
+}
+#php-email-form{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
 }
 
 .php-email-form .loading {
@@ -177,16 +174,16 @@ h6 {
   line-height: 1;
   margin-bottom: 15px;
 }
-
+#navToggle ,#scroll-top{
+  box-shadow: 0 0 10px black;
+}
 .header .logo img {
   max-height: 32px;
   margin-right: 8px;
 }
 
-.header .logo h1 {
-  font-size: 24px;
+.header .logo h4 {
   margin: 0;
-  font-weight: 700;
   color: #dbdce4;
 }
 
@@ -222,7 +219,6 @@ h6 {
 .header .header-toggle {
   color: var(--contrast-color);
   background-color: var(--accent-color);
-  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,8 +263,6 @@ h6 {
   color: var(--nav-color);
   padding: 15px 10px;
   font-family: var(--nav-font);
-  font-size: 16px;
-  font-weight: 400;
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -278,13 +272,11 @@ h6 {
 
 .navmenu a .navicon,
 .navmenu a:focus .navicon {
-  font-size: 20px;
   margin-right: 10px;
 }
 
 .navmenu a .toggle-dropdown,
 .navmenu a:focus .toggle-dropdown {
-  font-size: 12px;
   line-height: 0;
   margin-left: auto;
   width: 30px;
@@ -363,10 +355,11 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  font-size: 14px;
-  padding: 40px 0;
-  position: relative;
+  padding: 40px;
+  bottom: 0;
+  position: static;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  background-color: var(--background-color);
 }
 
 .footer .social-links {
@@ -375,12 +368,10 @@ h6 {
  
 .footer .credits {
   margin-top: 10px;
-  font-size: 13px;
   text-align: center;
 }
 
 .icon {
-  font-size: 20px;
   color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color));
   width: 44px;
@@ -449,7 +440,6 @@ h6 {
 }
 
 .scroll-top i {
-  font-size: 24px;
   color: var(--contrast-color);
   line-height: 0;
 }
@@ -484,19 +474,12 @@ h6 {
   position: relative;
 }
 
-.page-title h1 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
 .page-title .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .page-title .breadcrumbs ol li+li {
@@ -530,8 +513,6 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -573,6 +554,7 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left;
   z-index: 1;
 }
 
@@ -589,18 +571,16 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
+.hero h1 {
   margin: 0;
-  font-size: 64px;
-  font-weight: 700;
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 26px;
 }
 
 .hero p span {
+  font-size: larger;
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent-color);
 }
@@ -608,30 +588,6 @@ section,
 .hero .social-links {
   margin-top: 25px;
 }
-
-/* .hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
-
-.hero .social-links a:hover {
-  color: var(--accent-color);
-} */
-
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-}
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -655,8 +611,6 @@ section,
 }
 
 .about .about-content .subtitle {
-  font-size: 0.875rem;
-  font-weight: 600;
   letter-spacing: 2px;
   color: var(--accent-color);
   margin-bottom: 1rem;
@@ -664,13 +618,10 @@ section,
 }
 
 .about .about-content h2 {
-  font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 .about .about-content .lead {
-  font-size: 1.1rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
@@ -689,7 +640,6 @@ section,
 }
 
 .about .personal-info .info-item .label {
-  font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
@@ -709,53 +659,12 @@ section,
 }
 
 .about .signature .signature-info h4 {
-  font-size: 1.25rem;
   margin-bottom: 0.25rem;
 }
 
 .about .signature .signature-info p {
-  font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
-}
-
-
-
-
-
-
-
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 30px;
-  width: 100%;
-}
-
-.stats .stats-item i {
-  color: var(--accent-color);
-  display: block;
-  font-size: 44px;
-  float: left;
-  line-height: 0;
-}
-
-.stats .stats-item .purecounter {
-  color: var(--heading-color);
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  margin-left: 60px;
-}
-
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: var(--heading-font);
-  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -766,18 +675,12 @@ section,
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Gladiora' !important;
 }
 
 .skills .skill-box h3 {
-  font-size: 1.2rem;
+  font-family: 'Gladiora' !important;
   margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.skills .skill-box p {
-  font-size: 0.9rem;
-  margin-bottom: 0.8rem;
-  opacity: 0.6;
 }
 
 .skills .skill-box .progress {
@@ -796,14 +699,14 @@ section,
   transition: 0.9s;
   width: 1px;
 }
-
+.overflow-hidden{
+  overflow: hidden;
+}
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
 .resume .resume-title {
   color: var(--heading-color);
-  font-size: 26px;
-  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -817,18 +720,14 @@ section,
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -856,21 +755,6 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .resume .resume-wrapper .resume-block {
   margin-bottom: 3rem;
 }
@@ -880,9 +764,7 @@ section,
 }
 
 .resume .resume-wrapper .resume-block h2 {
-  font-size: 2rem;
   margin-bottom: 0.8rem;
-  font-weight: 700;
 }
 
 .resume .resume-wrapper .resume-block h2 span {
@@ -926,14 +808,11 @@ section,
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-left .company {
   color: var(--heading-color);
-  font-weight: 600;
-  font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-left .period {
   color: var(--accent-color);
-  font-size: 0.9rem;
 }
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-dot {
@@ -954,9 +833,7 @@ section,
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-right .position {
   color: var(--heading-color);
-  font-size: 1.2rem;
   margin-bottom: 0.6rem;
-  font-weight: 600;
 }
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-right .description {
@@ -972,9 +849,6 @@ section,
 }
 
 @media (max-width: 992px) {
-  .resume .resume-wrapper .resume-block h2 {
-    font-size: 2rem;
-  }
 
   .resume .resume-wrapper .timeline::before {
     right: 1rem;
@@ -1004,172 +878,6 @@ section,
   }
 }
 
-
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio .portfolio-filters-container {
-  margin-bottom: 40px;
-}
-
-.portfolio .portfolio-filters {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.portfolio .portfolio-filters li {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 8px 20px;
-  cursor: pointer;
-  border-radius: 30px;
-  background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
-  color: var(--default-color);
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-filters li:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
-  transform: translateY(-2px);
-}
-
-.portfolio .portfolio-filters li.filter-active {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.portfolio .portfolio-card {
-  background-color: var(--surface-color);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio .portfolio-card:hover .portfolio-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-.portfolio .portfolio-card:hover .portfolio-overlay .portfolio-actions {
-  transform: translateY(0);
-}
-
-.portfolio .portfolio-card .portfolio-image {
-  position: relative;
-  overflow: hidden;
-  aspect-ratio: 16/10;
-}
-
-.portfolio .portfolio-card .portfolio-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease-in-out;
-}
-
-.portfolio .portfolio-card .portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-}
-
-.portfolio .portfolio-card .portfolio-overlay .portfolio-actions {
-  transform: translateY(20px);
-  transition: all 0.4s ease-in-out;
-  display: flex;
-  gap: 15px;
-}
-
-.portfolio .portfolio-card .portfolio-overlay .portfolio-actions a {
-  width: 45px;
-  height: 45px;
-  background-color: var(--surface-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent-color);
-  font-size: 20px;
-  transition: all 0.3s ease;
-}
-
-.portfolio .portfolio-card .portfolio-overlay .portfolio-actions a:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: scale(1.1);
-}
-
-.portfolio .portfolio-card .portfolio-content {
-  padding: 25px;
-}
-
-.portfolio .portfolio-card .portfolio-content .category {
-  font-size: 14px;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.portfolio .portfolio-card .portfolio-content h3 {
-  font-size: 20px;
-  margin: 0 0 15px;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.portfolio .portfolio-card .portfolio-content h3:hover {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-card .portfolio-content p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 0;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    padding: 6px 15px;
-  }
-
-  .portfolio .portfolio-card .portfolio-content {
-    padding: 20px;
-  }
-
-  .portfolio .portfolio-card .portfolio-content h3 {
-    font-size: 18px;
-  }
-
-  .portfolio .portfolio-card .portfolio-content p {
-    font-size: 14px;
-  }
-}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1190,7 +898,6 @@ section,
 }
 
 .contact .info-item i {
-  font-size: 20px;
   color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   width: 44px;
@@ -1205,15 +912,12 @@ section,
 
 .contact .info-item h3 {
   padding: 0;
-  font-size: 18px;
-  font-weight: 700;
   margin-bottom: 5px;
 }
 
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
 }
 
 .contact .info-item i:hover {
@@ -1237,7 +941,6 @@ section,
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
@@ -1249,7 +952,8 @@ section,
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  box-shadow: 0px 0px 5px var(--accent-color)!important;
+  /* box-shadow: 0px 0px 5px var(--accent-color)!important; */
+  border: dotted 2px var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
@@ -1271,6 +975,10 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
   
 }
+.pc-0{
+  padding: 0;
+  overflow: hidden;
+}
 #contact form input,#contact form textarea{
   border-radius: 5px !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -1283,86 +991,7 @@ section,
   border-radius: 8px !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-.icon {
-  font-size: 20px;
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-left: 15px;
-}
-.icon:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+#containerContact{
+  padding:0 20px;
+  margin: 0;
 }
