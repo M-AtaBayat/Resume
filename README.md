@@ -25,7 +25,7 @@ This project showcases my skills in **front-end development**, including **respo
 
 ## **Live Demo**
 
-Check the live demo of the website here: [** Link**](YOUR_VERCEL_LINK_HERE)
+Check the live demo of the website here: [**Link**](YOUR_VERCEL_LINK_HERE)
 
 ---
 
